@@ -1,0 +1,19 @@
+﻿<Window x:Class="oop_4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:oop_4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="5,5,-5,-5">
+        <ListBox x:Name="materials" HorizontalAlignment="Left" Height="124" Margin="30,10,0,0" VerticalAlignment="Top" Width="170" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="ListBox_SelectionChanged"/>
+        <ListBox x:Name="testResults" HorizontalAlignment="Left" Height="124" Margin="418,10,0,0" VerticalAlignment="Top" Width="170" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="ListBox_SelectionChanged"/>
+        <ListBox x:Name="crossSections" HorizontalAlignment="Left" Height="124" Margin="223,10,0,0" VerticalAlignment="Top" Width="170" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="ListBox_SelectionChanged"/>
+        <Label x:Name="result" HorizontalAlignment="Left" Margin="608,35,0,0" VerticalAlignment="Top" Width="172" Height="99"/>
+        <Button x:Name="runTests" Content="Запустить тесты" HorizontalAlignment="Left" Margin="30,178,0,0" VerticalAlignment="Top" Click="runTests_Click" Height="34" Width="135"/>
+        <ListBox x:Name="reasonsList" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="30,236,80,27"/>
+        <Label x:Name="successTests" Content="Пройдено тестов: " HorizontalAlignment="Left" Margin="315,182,0,0" VerticalAlignment="Top" ScrollViewer.CanContentScroll="True"/>
+        <Label x:Name="failTests" Content="Провалено тестов: " HorizontalAlignment="Left" Margin="498,182,0,0" VerticalAlignment="Top" ScrollViewer.CanContentScroll="True"/>
+    </Grid>
+</Window>

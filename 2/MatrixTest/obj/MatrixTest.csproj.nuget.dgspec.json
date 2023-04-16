@@ -1,0 +1,143 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Timiry\\Desktop\\Учеба\\ооп\\oop\\2\\MatrixTest\\MatrixTest.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Timiry\\Desktop\\Учеба\\ооп\\oop\\2\\MatrixTest\\MatrixTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Timiry\\Desktop\\Учеба\\ооп\\oop\\2\\MatrixTest\\MatrixTest.csproj",
+        "projectName": "MatrixTest",
+        "projectPath": "C:\\Users\\Timiry\\Desktop\\Учеба\\ооп\\oop\\2\\MatrixTest\\MatrixTest.csproj",
+        "packagesPath": "C:\\Users\\Timiry\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Timiry\\Desktop\\Учеба\\ооп\\oop\\2\\MatrixTest\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Timiry\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {
+              "C:\\Users\\Timiry\\Desktop\\Учеба\\ооп\\oop\\2\\oop_2_Matrix\\oop_2_Matrix.csproj": {
+                "projectPath": "C:\\Users\\Timiry\\Desktop\\Учеба\\ооп\\oop\\2\\oop_2_Matrix\\oop_2_Matrix.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[2.2.8, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[2.2.8, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.1.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Timiry\\Desktop\\Учеба\\ооп\\oop\\2\\oop_2_Matrix\\oop_2_Matrix.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Timiry\\Desktop\\Учеба\\ооп\\oop\\2\\oop_2_Matrix\\oop_2_Matrix.csproj",
+        "projectName": "oop_2_Matrix",
+        "projectPath": "C:\\Users\\Timiry\\Desktop\\Учеба\\ооп\\oop\\2\\oop_2_Matrix\\oop_2_Matrix.csproj",
+        "packagesPath": "C:\\Users\\Timiry\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Timiry\\Desktop\\Учеба\\ооп\\oop\\2\\oop_2_Matrix\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Timiry\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+﻿<Window x:Class="oop_3_IntegerOverflow.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:oop_3_IntegerOverflow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Введите два целых числа:" HorizontalAlignment="Left" Margin="87,41,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tb_num1" HorizontalAlignment="Left" Margin="94,102,0,0" TextWrapping="Wrap" Text="2" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tb_num2" HorizontalAlignment="Left" Margin="94,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="2147483647"/>
+        <Label x:Name="label_res" Content="Результат:" HorizontalAlignment="Left" Margin="94,0,0,0" VerticalAlignment="Center" RenderTransformOrigin="0.527,0.135"/>
+        <Button x:Name="btn_multiply" Content="Перемножить числа" HorizontalAlignment="Left" Margin="262,100,0,0" VerticalAlignment="Top" Height="47" Width="138" Click="btn_multiply_Click"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,30 @@
+﻿<Window x:Class="oop_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:oop_2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="675">
+    <Grid HorizontalAlignment="Left">
+        <Label Content="Введите целые числа:" HorizontalAlignment="Left" Margin="36,23,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="first_num" HorizontalAlignment="Left" Margin="30,64,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="155"/>
+        <TextBox x:Name="second_num" HorizontalAlignment="Left" Margin="30,87,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="155" Height="19"/>
+        <TextBox x:Name="third_num" HorizontalAlignment="Left" Margin="30,111,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="155"/>
+        <TextBox x:Name="fourth_num" HorizontalAlignment="Left" Margin="30,135,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="155"/>
+        <TextBox x:Name="fifth_num" HorizontalAlignment="Left" Margin="30,157,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="155"/>
+        <Label x:Name="label_Euclid1" Content="НОД по Евклиду:" HorizontalAlignment="Left" Height="31" VerticalAlignment="Center" Width="192" Margin="24,0,0,0"/>
+        <Button x:Name="GCD_2" Content="Найти НОД двух чисел" HorizontalAlignment="Left" Height="26" Margin="30,257,0,0" VerticalAlignment="Top" Width="155" Click="GCD_2_Click"/>
+        <Button x:Name="GCD_3" Content="Найти НОД трех чисел" HorizontalAlignment="Left" Height="26" Margin="30,288,0,0" VerticalAlignment="Top" Width="155" Click="GCD_3_Click"/>
+        <Button x:Name="GCD_4" Content="Найти НОД четырех чисел" HorizontalAlignment="Left" Height="26" Margin="30,319,0,0" VerticalAlignment="Top" Width="155" Click="GCD_4_Click"/>
+        <Button x:Name="GCD_5" Content="Найти НОД пяти чисел" HorizontalAlignment="Left" Height="26" Margin="30,350,0,0" VerticalAlignment="Top" Width="155" Click="GCD_5_Click"/>
+        <Label Content="Для сравнения методов Евклида и Штейна введите&#xD;&#xA;любое количество целых чисел через пробел:" HorizontalAlignment="Left" Margin="305,30,0,0" VerticalAlignment="Top" Height="46" Width="298"/>
+        <TextBox x:Name="nums_textbox" HorizontalAlignment="Left" Margin="305,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="288" Height="42" Text="298467352 569484"/>
+        <Label x:Name="label_Euclid2" Content="Евклид:" HorizontalAlignment="Left" Margin="308,140,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Euclid_time" Content="Затраченное время:" HorizontalAlignment="Left" Margin="308,170,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Stein" Content="Штейн:" HorizontalAlignment="Left" Margin="308,200,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Stein_time" Content="Затраченное время:" HorizontalAlignment="Left" Margin="308,230,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="CompareMethods_btn" Content="Сравнить" HorizontalAlignment="Left" Margin="389,286,0,0" VerticalAlignment="Top" Height="31" Width="135" Click="CompareMethods_btn_Click"/>
+
+    </Grid>
+</Window>

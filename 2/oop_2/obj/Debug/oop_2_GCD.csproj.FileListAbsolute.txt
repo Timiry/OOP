@@ -1,0 +1,16 @@
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\2\oop_2\bin\Debug\oop_2.exe.config
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\2\oop_2\bin\Debug\oop_2.exe
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\2\oop_2\bin\Debug\oop_2.pdb
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\2\oop_2\obj\Debug\oop_2_GCD.csproj.AssemblyReference.cache
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\2\oop_2\obj\Debug\oop_2_GCD.csproj.SuggestedBindingRedirects.cache
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\2\oop_2\obj\Debug\MainWindow.g.cs
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\2\oop_2\obj\Debug\App.g.cs
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\2\oop_2\obj\Debug\oop_2_MarkupCompile.cache
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\2\oop_2\obj\Debug\oop_2_MarkupCompile.lref
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\2\oop_2\obj\Debug\MainWindow.baml
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\2\oop_2\obj\Debug\oop_2.g.resources
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\2\oop_2\obj\Debug\oop_2.Properties.Resources.resources
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\2\oop_2\obj\Debug\oop_2_GCD.csproj.GenerateResource.cache
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\2\oop_2\obj\Debug\oop_2_GCD.csproj.CoreCompileInputs.cache
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\2\oop_2\obj\Debug\oop_2.exe
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\2\oop_2\obj\Debug\oop_2.pdb
