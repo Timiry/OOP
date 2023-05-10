@@ -13,7 +13,7 @@ namespace oop_5
         public MeasureMassDevice(Units unitsToUse)
         {
             this.unitsToUse = unitsToUse;
-            measurementType = DeviceType.MASS;
+            measurementType = DeviceType.Mass;
         }
 
         public override decimal MetricValue()

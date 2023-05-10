@@ -8,39 +8,25 @@ namespace DeviceControl
 {
     public class DeviceController : IDisposable
     {
-        private IControllableDevice device;
-
-        /// <summary>
-        /// A factory method to create a start a new instance of a device.
-        /// </summary>
-        /// <param name="MeasurementType">Specifies which type of device to start. Must be MASS or LENGTH.</param>
-        /// <returns>An instance of the DeviceController class with the controlled device in the started state.</returns>
+        public DeviceType MeasurementType;
         public static DeviceController StartDevice(DeviceType MeasurementType)
         {
             DeviceController controller = new DeviceController();
-            switch (MeasurementType)
-            {
-                case DeviceType.LENGTH:
-                    controller.device = new FabrikamDevices.LengthMeasuringDevice();
-                    break;
-                case DeviceType.MASS:
-                    controller.device = new ContosoDevices.MassMeasuringDevice();
-                    break;
-            }
-            if (controller.device != null)
-            {
-                controller.device.StartDevice();
-            }
-
+            controller.MeasurementType = MeasurementType;
             return controller;
+        }
+
+        public void Dispose()
+        {
+            throw new NotImplementedException();
         }
 
         /// <summary>
         /// Stops the controlled device.
         /// </summary>
-        public void StopDevice()
+        public DeviceController StopDevice()
         {
-            device.StopDevice();
+            return null;
         }
 
         /// <summary>
@@ -49,19 +35,13 @@ namespace DeviceControl
         /// <returns>The measurement taken by the device.</returns>
         public int TakeMeasurement()
         {
-            return device.GetLatestMeasure();
-        }
-
-        /// <summary>
-        /// Disposes the device.
-        /// </summary>
-        public void Dispose()
-        {
+            Random value = new Random();
+            return value.Next(0, 100);
         }
     }
 
     public enum DeviceType
     {
-        LENGTH, MASS
+        Length, Mass
     }
 }

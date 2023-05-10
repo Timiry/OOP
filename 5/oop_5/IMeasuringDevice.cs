@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 
 namespace MeasuringDevice
-{
+{ 
     public interface IMeasuringDevice
     {
         /// <summary>

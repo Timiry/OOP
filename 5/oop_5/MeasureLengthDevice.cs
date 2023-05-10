@@ -14,7 +14,7 @@ namespace oop_5
         public MeasureLengthDevice(Units unitsToUse)
         {
             this.unitsToUse = unitsToUse;
-            measurementType = DeviceType.LENGTH;
+            measurementType = DeviceType.Length;
         }      
 
         public override decimal MetricValue()
