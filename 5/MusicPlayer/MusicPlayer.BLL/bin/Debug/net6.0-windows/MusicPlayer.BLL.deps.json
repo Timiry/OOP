@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "MusicPlayer.BLL/1.0.0": {
+        "dependencies": {
+          "MusicPlayer.DI": "1.0.0"
+        },
+        "runtime": {
+          "MusicPlayer.BLL.dll": {}
+        }
+      },
+      "MusicPlayer.DI/1.0.0": {
+        "runtime": {
+          "MusicPlayer.DI.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MusicPlayer.BLL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MusicPlayer.DI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

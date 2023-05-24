@@ -1,0 +1,15 @@
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MusicPlayer.BLL\bin\Debug\net6.0-windows\MusicPlayer.BLL.deps.json
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MusicPlayer.BLL\bin\Debug\net6.0-windows\MusicPlayer.BLL.dll
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MusicPlayer.BLL\bin\Debug\net6.0-windows\MusicPlayer.BLL.pdb
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MusicPlayer.BLL\bin\Debug\net6.0-windows\MusicPlayer.DI.dll
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MusicPlayer.BLL\bin\Debug\net6.0-windows\MusicPlayer.DI.pdb
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MusicPlayer.BLL\obj\Debug\net6.0-windows\MusicPlayer.BLL.csproj.AssemblyReference.cache
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MusicPlayer.BLL\obj\Debug\net6.0-windows\MusicPlayer.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MusicPlayer.BLL\obj\Debug\net6.0-windows\MusicPlayer.BLL.AssemblyInfoInputs.cache
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MusicPlayer.BLL\obj\Debug\net6.0-windows\MusicPlayer.BLL.AssemblyInfo.cs
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MusicPlayer.BLL\obj\Debug\net6.0-windows\MusicPlayer.BLL.csproj.CoreCompileInputs.cache
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MusicPlayer.BLL\obj\Debug\net6.0-windows\MusicPlayer.BLL.csproj.CopyComplete
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MusicPlayer.BLL\obj\Debug\net6.0-windows\MusicPlayer.BLL.dll
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MusicPlayer.BLL\obj\Debug\net6.0-windows\refint\MusicPlayer.BLL.dll
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MusicPlayer.BLL\obj\Debug\net6.0-windows\MusicPlayer.BLL.pdb
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MusicPlayer.BLL\obj\Debug\net6.0-windows\ref\MusicPlayer.BLL.dll

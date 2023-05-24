@@ -1,0 +1,15 @@
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MysicPlayer.Data.Memory\bin\Debug\net6.0-windows\MusicPlayer.Data.Memory.deps.json
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MysicPlayer.Data.Memory\bin\Debug\net6.0-windows\MusicPlayer.Data.Memory.dll
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MysicPlayer.Data.Memory\bin\Debug\net6.0-windows\MusicPlayer.Data.Memory.pdb
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MysicPlayer.Data.Memory\bin\Debug\net6.0-windows\MusicPlayer.DI.dll
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MysicPlayer.Data.Memory\bin\Debug\net6.0-windows\MusicPlayer.DI.pdb
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MysicPlayer.Data.Memory\obj\Debug\net6.0-windows\MusicPlayer.Data.Memory.csproj.AssemblyReference.cache
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MysicPlayer.Data.Memory\obj\Debug\net6.0-windows\MusicPlayer.Data.Memory.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MysicPlayer.Data.Memory\obj\Debug\net6.0-windows\MusicPlayer.Data.Memory.AssemblyInfoInputs.cache
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MysicPlayer.Data.Memory\obj\Debug\net6.0-windows\MusicPlayer.Data.Memory.AssemblyInfo.cs
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MysicPlayer.Data.Memory\obj\Debug\net6.0-windows\MusicPlayer.Data.Memory.csproj.CoreCompileInputs.cache
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MysicPlayer.Data.Memory\obj\Debug\net6.0-windows\MusicPlayer.Data.Memory.csproj.CopyComplete
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MysicPlayer.Data.Memory\obj\Debug\net6.0-windows\MusicPlayer.Data.Memory.dll
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MysicPlayer.Data.Memory\obj\Debug\net6.0-windows\refint\MusicPlayer.Data.Memory.dll
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MysicPlayer.Data.Memory\obj\Debug\net6.0-windows\MusicPlayer.Data.Memory.pdb
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MysicPlayer.Data.Memory\obj\Debug\net6.0-windows\ref\MusicPlayer.Data.Memory.dll

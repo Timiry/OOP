@@ -1,0 +1,34 @@
+﻿<Window x:Class="MusicPlayer.App.wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MusicPlayer.App.wpf"
+        mc:Ignorable="d"
+        Title="Музыкальный плеер" Height="480" Width="800">
+    <Grid>
+        <ListBox x:Name="ListBox_Songs" HorizontalAlignment="Left" Height="295" Margin="454,55,0,0" VerticalAlignment="Top" Width="277" SelectionChanged = "ListBox_Songs_SelectionChanged" FontSize="14"/>
+        <Label Content="Ваши песни:" HorizontalAlignment="Left" Margin="454,10,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Button x:Name="Btn_AddSong" Content="Добавить песню" HorizontalAlignment="Left" Margin="454,377,0,0" VerticalAlignment="Top" Width="120" Height="35" Click="Btn_AddSong_Click"/>
+        <Button x:Name="Btn_RemoveSong" Content="Удалить песню" HorizontalAlignment="Left" Margin="610,377,0,0" VerticalAlignment="Top" Width="120" Height="35" Click="Btn_RemoveSong_Click"/>
+        <Button x:Name="Btn_Play" HorizontalAlignment="Left" Margin="218,364,0,0" VerticalAlignment="Top" Width="50" Height="50" Click="Btn_Play_Click">
+            <Image Source="img/play.png"/>
+        </Button>
+        <Button x:Name="Btn_Pause" HorizontalAlignment="Left" Margin="149,364,0,0" VerticalAlignment="Top" Width="50" Height="50" Click="Btn_Pause_Click">
+            <Image Source="img/pausa.png"/>
+        </Button>
+        <Button x:Name="Btn_Previous" HorizontalAlignment="Left" Margin="82,364,0,0" VerticalAlignment="Top" Width="50" Height="50" Click="Btn_Previous_Click">
+            <Image Source="img/prev.png"/>
+        </Button>
+        <Button x:Name="Btn_Next" HorizontalAlignment="Left" Margin="284,364,0,0" VerticalAlignment="Top" Width="50" Height="50" Click="Btn_Next_Click">
+            <Image Source="img/next.png"/>
+        </Button>
+        <Label x:Name="Label_Status" Content="Добавьте и выберите песню" HorizontalAlignment="Left" Margin="82,10,0,0" VerticalAlignment="Top" Width="222" FontSize="16"/>
+        <Label x:Name="Label_CurrentSong" Content="" HorizontalAlignment="Left" Margin="83,320,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Image Source="img/note.jpg" HorizontalAlignment="Left" Height="255" Margin="82,55,0,0" VerticalAlignment="Top" Width="256"/>
+
+
+
+    </Grid>
+
+</Window>

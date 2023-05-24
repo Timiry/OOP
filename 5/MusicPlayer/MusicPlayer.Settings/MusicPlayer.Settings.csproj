@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SimpleInjector" Version="5.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MusicPlayer.BLL\MusicPlayer.BLL.csproj" />
+    <ProjectReference Include="..\MusicPlayer.Data.Sql\MusicPlayer.Data.Sql.csproj" />
+    <ProjectReference Include="..\MusicPlayer.DI\MusicPlayer.DI.csproj" />
+    <ProjectReference Include="..\MysicPlayer.Data.Memory\MusicPlayer.Data.Memory.csproj" />
+  </ItemGroup>
+
+</Project>

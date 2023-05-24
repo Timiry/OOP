@@ -1,0 +1,17 @@
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MusicPlayer.Data.Sql\bin\Debug\net6.0-windows\MusicPlayer.Data.Sql.deps.json
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MusicPlayer.Data.Sql\bin\Debug\net6.0-windows\MusicPlayer.Data.Sql.runtimeconfig.json
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MusicPlayer.Data.Sql\bin\Debug\net6.0-windows\MusicPlayer.Data.Sql.dll
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MusicPlayer.Data.Sql\bin\Debug\net6.0-windows\MusicPlayer.Data.Sql.pdb
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MusicPlayer.Data.Sql\bin\Debug\net6.0-windows\MusicPlayer.DI.dll
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MusicPlayer.Data.Sql\bin\Debug\net6.0-windows\MusicPlayer.DI.pdb
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MusicPlayer.Data.Sql\obj\Debug\net6.0-windows\MusicPlayer.Data.Sql.csproj.AssemblyReference.cache
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MusicPlayer.Data.Sql\obj\Debug\net6.0-windows\MusicPlayer.Data.Sql.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MusicPlayer.Data.Sql\obj\Debug\net6.0-windows\MusicPlayer.Data.Sql.AssemblyInfoInputs.cache
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MusicPlayer.Data.Sql\obj\Debug\net6.0-windows\MusicPlayer.Data.Sql.AssemblyInfo.cs
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MusicPlayer.Data.Sql\obj\Debug\net6.0-windows\MusicPlayer.Data.Sql.csproj.CoreCompileInputs.cache
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MusicPlayer.Data.Sql\obj\Debug\net6.0-windows\MusicPlayer.Data.Sql.csproj.CopyComplete
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MusicPlayer.Data.Sql\obj\Debug\net6.0-windows\MusicPlayer.Data.Sql.dll
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MusicPlayer.Data.Sql\obj\Debug\net6.0-windows\refint\MusicPlayer.Data.Sql.dll
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MusicPlayer.Data.Sql\obj\Debug\net6.0-windows\MusicPlayer.Data.Sql.pdb
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MusicPlayer.Data.Sql\obj\Debug\net6.0-windows\MusicPlayer.Data.Sql.genruntimeconfig.cache
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\5\MusicPlayer\MusicPlayer.Data.Sql\obj\Debug\net6.0-windows\ref\MusicPlayer.Data.Sql.dll

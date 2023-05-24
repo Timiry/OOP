@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="img\next.png" />
+    <None Remove="img\note.jpg" />
+    <None Remove="img\pausa.png" />
+    <None Remove="img\play.png" />
+    <None Remove="img\prev.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MusicPlayer.DI\MusicPlayer.DI.csproj" />
+    <ProjectReference Include="..\MusicPlayer.Settings\MusicPlayer.Settings.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="img\next.png" />
+    <Resource Include="img\note.jpg" />
+    <Resource Include="img\pausa.png" />
+    <Resource Include="img\play.png" />
+    <Resource Include="img\prev.png" />
+  </ItemGroup>
+
+</Project>
