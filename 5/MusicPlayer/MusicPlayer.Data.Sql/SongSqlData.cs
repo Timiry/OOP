@@ -10,7 +10,7 @@ namespace MusicPlayer.Data.Sql
 {
     public class SongSqlData : IData<ISong>
     {
-        public SongSqlData() { }
+        public SongSqlData() {}
 
         public void Add(ISong item)
         {
