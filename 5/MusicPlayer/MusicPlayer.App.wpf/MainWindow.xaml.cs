@@ -27,11 +27,12 @@ namespace MusicPlayer.App.wpf
         #region DI - Внедрение зависимости
         private static Configuration _configuration;
 
-        public static ISong CreateSong(string title, string artist)
-        {
+        public static ISong CreateSong(string title, string artist, string file)
+        {          
             var song = _configuration.Container.GetInstance<ISong>();
             song.Title = title;
             song.Artist = artist;
+            song.FileName = file;
 
             var player = _configuration.Container.GetInstance<IPlayer>();
             player.AddSong(song);
@@ -65,14 +66,14 @@ namespace MusicPlayer.App.wpf
         private void Btn_Play_Click(object sender, RoutedEventArgs e)
         {
             var player = _configuration.Container.GetInstance<IPlayer>();
-            player.IsPlaying = true;
+            player.Play();
             Label_Status.Content = "Играет:";
         }
 
         private void Btn_Pause_Click(object sender, RoutedEventArgs e)
         {
             var player = _configuration.Container.GetInstance<IPlayer>();
-            player.IsPlaying = false;
+            player.Pause();
             Label_Status.Content = "Остановлена:";
         }
 
@@ -143,6 +144,9 @@ namespace MusicPlayer.App.wpf
             else
             {
                 player.CurrentSong = (ISong)ListBox_Songs.SelectedItem;
+                //player._mediaPlayer.Open(new Uri(player.CurrentSong.FileName, UriKind.Relative));
+                player.Open();
+                player.Play();
                 Label_Status.Content = "Играет:";
                 Label_CurrentSong.Content = $"Песня: {player.CurrentSong.Title} Исполнитель: {player.CurrentSong.Artist}";
                 ListBox_Songs.SelectedItem = player.CurrentSong;

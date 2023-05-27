@@ -1,4 +1,5 @@
-﻿using MusicPlayer.BLL;
+﻿using Microsoft.Win32;
+using MusicPlayer.BLL;
 using MusicPlayer.DI;
 using System;
 using System.Collections.Generic;
@@ -30,14 +31,30 @@ namespace MusicPlayer.App.wpf
         {
             var title = TextBox_Title.Text;
             var artist = TextBox_Artist.Text;
-            if (title.Length == 0 || artist.Length == 0)
+            var file = TextBox_FileName.Text;
+            if (title.Length == 0 || artist.Length == 0 || file.Length == 0)
             {
-                MessageBox.Show("Поля Название и Исполнитель не могут быть пустыми!"); return;
+                MessageBox.Show("Заполните все поля!"); return;
             }
-            MainWindow.CreateSong(title, artist);
+            MainWindow.CreateSong(title, artist, file);
             var own = (MainWindow)this.Owner;
             own.RefreshSongsView();
             this.DialogResult = true;
+        }
+
+        private void Btn_Open_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog fileDialog = new OpenFileDialog()
+            {
+                Multiselect = false,
+                DefaultExt = ".mp3"
+            };
+            bool? dialogOk = fileDialog.ShowDialog();
+            if(dialogOk == true)
+            {
+                string path = System.IO.Path.GetFullPath(fileDialog.FileName);
+                TextBox_FileName.Text = path;
+            }
         }
     }
 }

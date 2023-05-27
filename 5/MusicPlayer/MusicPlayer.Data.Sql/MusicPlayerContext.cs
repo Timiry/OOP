@@ -7,10 +7,9 @@ using System.Threading.Tasks;
 
 namespace MusicPlayer.Data.Sql
 {
-    internal class MusicPlayerContext : DbContext
+    public class MusicPlayerContext : DbContext
     {
-        internal MusicPlayerContext() : base("MusicPlayer") {
-            //FixEfProviderServicesProblem();
+        public MusicPlayerContext() : base("MusicPlayer") {
             
         }
 

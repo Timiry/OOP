@@ -16,6 +16,8 @@ namespace MusicPlayer.Data.Sql
         {
             using (var db = new MusicPlayerContext())
             {
+                var s = db.Songs.SingleOrDefault(s => s.Title.Equals(item.Title) && s.Artist.Equals(item.Artist));
+                if (s != null) { return; }
                 var song = new SongEntity(item);
                 db.Songs.Add(song);
                 db.SaveChanges();

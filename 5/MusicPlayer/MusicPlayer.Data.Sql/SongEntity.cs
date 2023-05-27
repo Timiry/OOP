@@ -8,6 +8,7 @@ namespace MusicPlayer.Data.Sql
         public int Id { get; set; }
         public string Title { get; set; }
         public string Artist { get; set; }
+        public string FileName { get; set; }
 
         public SongEntity() { }
         public SongEntity(ISong item)
@@ -15,6 +16,7 @@ namespace MusicPlayer.Data.Sql
             Id = 0;
             Title = item.Title;
             Artist = item.Artist;
+            FileName = item.FileName;
         }
 
         public bool Equals(ISong other)
