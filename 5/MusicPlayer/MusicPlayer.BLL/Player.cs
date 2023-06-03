@@ -5,6 +5,7 @@ using System.Windows;
 using System.Windows.Media;
 using MusicPlayer.DI;
 
+
 namespace MusicPlayer.BLL
 {
     public class Player : IPlayer
@@ -13,7 +14,7 @@ namespace MusicPlayer.BLL
 
         public ISong CurrentSong { get; set; }
 
-       public MediaPlayer _mediaPlayer { get; set; }
+        public MediaPlayer _mediaPlayer { get; set; }
 
         public bool IsPlaying { get; set; }
 
@@ -101,7 +102,6 @@ namespace MusicPlayer.BLL
                     if (enumerator.MoveNext())
                     {
                         CurrentSong = enumerator.Current;
-                        //_mediaPlayer.Open(new Uri(CurrentSong.FileName));
                         Open();
                     }
                     else
@@ -109,7 +109,6 @@ namespace MusicPlayer.BLL
                         enumerator = songs.GetEnumerator();
                         enumerator.MoveNext();
                         CurrentSong = enumerator.Current;
-                        //_mediaPlayer.Open(new Uri(CurrentSong.FileName));
                         Open();
                     }
                     break;

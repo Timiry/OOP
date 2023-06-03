@@ -20,11 +20,11 @@ namespace oop_5
         {
             if (unitsToUse == Units.Metric)
             {
-                return mostRecentMeasure;
+                return MostRecentMeasure;
             }
             else
             {
-                return mostRecentMeasure * 0.4536M;
+                return MostRecentMeasure * 0.4536M;
             }
         }
 
@@ -32,11 +32,11 @@ namespace oop_5
         {
             if (unitsToUse == Units.Imperial)
             {
-                return mostRecentMeasure;
+                return MostRecentMeasure;
             }
             else
             {
-                return mostRecentMeasure * 2.2046M;
+                return MostRecentMeasure * 2.2046M;
             }
         }
     }

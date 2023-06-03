@@ -17,6 +17,13 @@
         <Button x:Name="Btn_GetMetricValue" Content="Get metric value " HorizontalAlignment="Left" Margin="32,195,0,0" VerticalAlignment="Top" Height="35" Width="112" IsEnabled="False" Click="Btn_GetMetricValue_Click"/>
         <Button x:Name="Btn_GetImperialValue" Content="Get imperial value" HorizontalAlignment="Left" Margin="170,195,0,0" VerticalAlignment="Top" Height="35" Width="112" IsEnabled="False" Click="Btn_GetImperialValue_Click"/>
         <Button x:Name="Btn_GetRawData" Content="Get raw data" HorizontalAlignment="Left" Margin="102,256,0,0" VerticalAlignment="Top" Height="35" Width="112" IsEnabled="False" Click="Btn_GetRawData_Click"/>
-        <ListBox x:Name="ListBox_1" Margin="327,95,36,83" Height="NaN" Width="NaN"/>
+        <ListBox x:Name="ListBox_rawDataValues" Margin="531,125,36,53" Height="NaN" Width="NaN"/>
+        <TextBox x:Name="Tb_mostRecentMeasure" HorizontalAlignment="Left" Margin="353,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Raw data" HorizontalAlignment="Left" Margin="536,90,0,0" VerticalAlignment="Top"/>
+        <Label Content="Most recent measure" HorizontalAlignment="Left" Margin="351,125,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Tb_metricValue" HorizontalAlignment="Left" Margin="353,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Metric value" HorizontalAlignment="Left" Margin="351,215,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Tb_imperialValue" HorizontalAlignment="Left" Margin="353,340,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Imperial value" HorizontalAlignment="Left" Margin="355,305,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>

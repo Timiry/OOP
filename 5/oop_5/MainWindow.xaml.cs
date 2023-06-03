@@ -33,7 +33,8 @@ namespace oop_5
 
         public DeviceType devType;
         public Units units;
-        public IMeasuringDevice device = null;
+        public IEventEnabledMeasuringDevice device = null;
+        public event EventHandler NewMeasurementTaken;
 
         private void ComboBox_DeviceType_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -80,30 +81,45 @@ namespace oop_5
         private void Btn_StartCollecting_Click(object sender, RoutedEventArgs e)
         {
             device.StartCollecting();
+            NewMeasurementTaken = new EventHandler(device_NewMeasurementTaken);
+            device.NewMeasurementTaken += NewMeasurementTaken;
+        }
+
+        private void device_NewMeasurementTaken(object? sender, EventArgs e)
+        {
+            if(device != null)
+            {
+                Tb_mostRecentMeasure.Text = device.MostRecentMeasure.ToString();
+                Tb_metricValue.Text = device.MetricValue().ToString();
+                Tb_imperialValue.Text = device.ImperialValue().ToString();
+                ListBox_rawDataValues.ItemsSource = null;
+                ListBox_rawDataValues.ItemsSource = device.GetRawData();
+            }
         }
 
         private void Btn_StopCollecting_Click(object sender, RoutedEventArgs e)
         {
             device.StopCollecting();
+            device.NewMeasurementTaken -= NewMeasurementTaken;
         }
 
         private void Btn_GetMetricValue_Click(object sender, RoutedEventArgs e)
         {
-            ListBox_1.Items.Add("Metric value: " + device.MetricValue());
+        //    ListBox_1.Items.Add("Metric value: " + device.MetricValue());
         }
 
         private void Btn_GetImperialValue_Click(object sender, RoutedEventArgs e)
         {
-            ListBox_1.Items.Add("Imperial value: " + device.ImperialValue());
+        //    ListBox_1.Items.Add("Imperial value: " + device.ImperialValue());
         }
 
         private void Btn_GetRawData_Click(object sender, RoutedEventArgs e)
         {
-            ListBox_1.Items.Add("Row data:");
-            foreach(int val in device.GetRawData())
-            {
-                ListBox_1.Items.Add(val);
-            }
+        //    ListBox_1.Items.Add("Row data:");
+        //    foreach(int val in device.GetRawData())
+        //    {
+        //        ListBox_1.Items.Add(val);
+        //    }
         }
     }
 }

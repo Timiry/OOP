@@ -65,6 +65,10 @@ namespace MusicPlayer.App.wpf
         
         private void Btn_Play_Click(object sender, RoutedEventArgs e)
         {
+            if (ListBox_Songs.SelectedItem == null)
+            {
+                ListBox_Songs.SelectedIndex = 0;
+            }
             var player = _configuration.Container.GetInstance<IPlayer>();
             player.Play();
             Label_Status.Content = "Играет:";
@@ -72,38 +76,48 @@ namespace MusicPlayer.App.wpf
 
         private void Btn_Pause_Click(object sender, RoutedEventArgs e)
         {
-            var player = _configuration.Container.GetInstance<IPlayer>();
-            player.Pause();
-            Label_Status.Content = "Остановлена:";
+            if (ListBox_Songs.SelectedItem != null)
+            {
+                var player = _configuration.Container.GetInstance<IPlayer>();
+                player.Pause();
+                Label_Status.Content = "Остановлена:";
+            }
         }
 
         private void Btn_Next_Click(object sender, RoutedEventArgs e)
         {
-            var player = _configuration.Container.GetInstance<IPlayer>();
-            player.Next();
-            Label_CurrentSong.Content = $"Песня: {player.CurrentSong.Title} Исполнитель: {player.CurrentSong.Artist}";
-            if(ListBox_Songs.SelectedIndex == ListBox_Songs.Items.Count - 1)
+            if (ListBox_Songs.SelectedItem != null)
             {
-                ListBox_Songs.SelectedIndex = 0;
-            }
-            else
-            {
-                ListBox_Songs.SelectedIndex++;
+                var player = _configuration.Container.GetInstance<IPlayer>();
+                player.Next();
+                Label_CurrentSong.Content = $"Песня: {player.CurrentSong.Title} Исполнитель: {player.CurrentSong.Artist}";
+                if (ListBox_Songs.SelectedIndex == ListBox_Songs.Items.Count - 1)
+                {
+                    ListBox_Songs.SelectedIndex = 0;
+                }
+                else
+                {
+                    ListBox_Songs.SelectedIndex++;
+                }
             }
         }
 
         private void Btn_Previous_Click(object sender, RoutedEventArgs e)
         {
-            var player = _configuration.Container.GetInstance<IPlayer>();
-            player.Previous();
-            Label_CurrentSong.Content = $"Песня: {player.CurrentSong.Title} Исполнитель: {player.CurrentSong.Artist}";
-            if (ListBox_Songs.SelectedIndex == 0)
+            if (ListBox_Songs.SelectedItem != null)
             {
-                ListBox_Songs.SelectedIndex = ListBox_Songs.Items.Count - 1;            
+                var player = _configuration.Container.GetInstance<IPlayer>();
+                player.Previous();
+                Label_CurrentSong.Content = $"Песня: {player.CurrentSong.Title} Исполнитель: {player.CurrentSong.Artist}";
+                if (ListBox_Songs.SelectedIndex == 0)
+                {
+                    ListBox_Songs.SelectedIndex = ListBox_Songs.Items.Count - 1;
+                }
+                else
+                {
+                    ListBox_Songs.SelectedIndex--;
+                }
             }
-            else
-            {
-                ListBox_Songs.SelectedIndex--;            }
         }
 
         private void Btn_AddSong_Click(object sender, RoutedEventArgs e)
@@ -115,9 +129,12 @@ namespace MusicPlayer.App.wpf
 
         private void Btn_RemoveSong_Click(object sender, RoutedEventArgs e)
         {
-            var player = _configuration.Container.GetInstance<IPlayer>();
-            player.RemoveSong((ISong)ListBox_Songs.SelectedItem);
-            ListBox_Songs.ItemsSource = GetAllSongs();
+            if(ListBox_Songs.SelectedItem != null)
+            {
+                var player = _configuration.Container.GetInstance<IPlayer>();
+                player.RemoveSong((ISong)ListBox_Songs.SelectedItem);
+                ListBox_Songs.ItemsSource = GetAllSongs();
+            }
         }
 
         public void RefreshSongsView()
@@ -148,7 +165,8 @@ namespace MusicPlayer.App.wpf
                 player.Open();
                 player.Play();
                 Label_Status.Content = "Играет:";
-                Label_CurrentSong.Content = $"Песня: {player.CurrentSong.Title} Исполнитель: {player.CurrentSong.Artist}";
+                Label_CurrentSong.Content = $"Песня: {player.CurrentSong.Title}";
+                Label_CurrentSongArtist.Content = $"Исполнитель: {player.CurrentSong.Artist}";
                 ListBox_Songs.SelectedItem = player.CurrentSong;
             }
         }
