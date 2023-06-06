@@ -56,5 +56,7 @@ namespace MeasuringDevice
         /// </summary>
         string LoggingFileName { get; set; }
 
+        void Dispose();
+
     }
 }

@@ -8,12 +8,14 @@ using DeviceControl;
 
 namespace oop_5
 {
-    public class MeasureMassDevice : MeasureDataDevice, IMeasuringDevice
+    public class MeasureMassDevice : MeasureDataDevice
     {
-        public MeasureMassDevice(Units unitsToUse)
+        public MeasureMassDevice(Units unitsToUse, int heartBeatInterval = 1000, string logFileName = "measurements.log")
         {
-            this.unitsToUse = unitsToUse;
             measurementType = DeviceType.Mass;
+            this.unitsToUse = unitsToUse;
+            this.HeartBeatInterval = heartBeatInterval;
+            this.LoggingFileName = logFileName;
         }
 
         public override decimal MetricValue()

@@ -73,9 +73,7 @@ namespace oop_5
 
             Btn_StartCollecting.IsEnabled = true;
             Btn_StopCollecting.IsEnabled = true;
-            Btn_GetMetricValue.IsEnabled = true;
-            Btn_GetImperialValue.IsEnabled = true;
-            Btn_GetRawData.IsEnabled = true;
+            Btn_Dispose.IsEnabled = true;
         }
 
         private void Btn_StartCollecting_Click(object sender, RoutedEventArgs e)
@@ -83,6 +81,7 @@ namespace oop_5
             device.StartCollecting();
             NewMeasurementTaken = new EventHandler(device_NewMeasurementTaken);
             device.NewMeasurementTaken += NewMeasurementTaken;
+            device.HeartBeat += (o, args) => Label_heartBeatTimeStamp.Content = $"HeartBeat Timestamp: {args.TimeStamp}";
         }
 
         private void device_NewMeasurementTaken(object? sender, EventArgs e)
@@ -103,23 +102,10 @@ namespace oop_5
             device.NewMeasurementTaken -= NewMeasurementTaken;
         }
 
-        private void Btn_GetMetricValue_Click(object sender, RoutedEventArgs e)
-        {
-        //    ListBox_1.Items.Add("Metric value: " + device.MetricValue());
-        }
 
-        private void Btn_GetImperialValue_Click(object sender, RoutedEventArgs e)
+        private void Btn_Dispose_Click(object sender, RoutedEventArgs e)
         {
-        //    ListBox_1.Items.Add("Imperial value: " + device.ImperialValue());
-        }
-
-        private void Btn_GetRawData_Click(object sender, RoutedEventArgs e)
-        {
-        //    ListBox_1.Items.Add("Row data:");
-        //    foreach(int val in device.GetRawData())
-        //    {
-        //        ListBox_1.Items.Add(val);
-        //    }
+            device.Dispose();
         }
     }
 }

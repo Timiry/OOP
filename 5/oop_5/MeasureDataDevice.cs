@@ -8,6 +8,7 @@ using DeviceControl;
 using oop_5;
 using System.ComponentModel;
 using System.IO;
+using System.Threading;
 
 namespace MeasuringDevice
 {
@@ -19,6 +20,9 @@ namespace MeasuringDevice
         protected DeviceType measurementType;
 
         private BackgroundWorker dataCollector;
+        private BackgroundWorker heartBeatTimer;
+        public bool Disposed { get; set; } = false;
+        protected bool IsCollecting { get; set; }
         public int HeartBeatInterval { get; set; }
         public Units UnitsToUse { get; set; }
         public int[] DataCaptured { get; set; }
@@ -26,7 +30,7 @@ namespace MeasuringDevice
         private StreamWriter loggingFileWriter;
         public string LoggingFileName { get; set; }
 
-        //public event HeartBeatEventHandler HeartBeat;
+        public event HeartBeatEventHandler HeartBeat;
         public event EventHandler NewMeasurementTaken;
 
         private void GetMeasurements()
@@ -49,7 +53,7 @@ namespace MeasuringDevice
                 System.Threading.Thread.Sleep(timer.Next(500, 1000));
                 dataCaptured[i] = controller.TakeMeasurement();
                 MostRecentMeasure = dataCaptured[i];
-                //if (!IsCollecting) break;
+                if (!IsCollecting) break;
                 if (loggingFileWriter is not null)
                 {
                     try
@@ -77,6 +81,32 @@ namespace MeasuringDevice
          
         }      
 
+        public void OnHeartBeat()
+        {
+            if(HeartBeat != null)
+            {
+                HeartBeat(this, new HeartBeatEventArgs());
+            }
+        }
+
+        private void StartHeartBeat()
+        {
+            heartBeatTimer = new BackgroundWorker();
+            heartBeatTimer.WorkerSupportsCancellation = true;
+            heartBeatTimer.WorkerReportsProgress = true;
+            heartBeatTimer.DoWork += (o, args) =>
+            {
+                while (true)
+                {
+                    Thread.Sleep(HeartBeatInterval);
+                    if (Disposed == true) break;
+                    heartBeatTimer.ReportProgress(0);
+                }
+            };
+            heartBeatTimer.ProgressChanged += (o, args) => OnHeartBeat();
+            heartBeatTimer.RunWorkerAsync();
+        }
+
         /// <summary>
         /// Converts the raw data collected by the measuring device into a metric value.
         /// </summary>
@@ -94,36 +124,15 @@ namespace MeasuringDevice
         {
             controller = DeviceController.StartDevice(measurementType);
             GetMeasurements();
+            StartHeartBeat();
         }
-
-        //private void GetMeasurements()
-        //{
-        //    dataCaptured = new int[10];
-        //    System.Threading.ThreadPool.QueueUserWorkItem((dummy) =>
-        //    {
-        //        int x = 0;
-        //        Random timer = new Random();
-
-        //        while (controller != null)
-        //        {
-        //            System.Threading.Thread.Sleep(timer.Next(500, 1000));
-        //            dataCaptured[x] = controller != null ?
-        //                controller.TakeMeasurement() : dataCaptured[x];
-        //            mostRecentMeasure = dataCaptured[x];
-        //            x++;
-        //            if (x == 10)
-        //            {
-        //                x = 0;
-        //            }
-        //        }
-        //    });
-        //}
 
         /// <summary>
         /// Stops the measuring device.
         /// </summary>
         public void StopCollecting()
         {
+            IsCollecting = false;
             if (dataCollector != null)
             {
                 dataCollector.CancelAsync();
@@ -142,11 +151,15 @@ namespace MeasuringDevice
 
         public void Dispose()
         {
+            Disposed = true;
             if (dataCollector != null)
             {
                 dataCollector.Dispose();
             }
+            if(heartBeatTimer != null)
+            {
+                heartBeatTimer.Dispose();
+            }
         }
     }
 }
-

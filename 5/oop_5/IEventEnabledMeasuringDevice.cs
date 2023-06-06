@@ -6,7 +6,7 @@ namespace MeasuringDevice
 	{
         event EventHandler NewMeasurementTaken;
         // Event that fires every heartbeat.
-        //event HeartBeatEventHandler HeartBeat;
+        event HeartBeatEventHandler HeartBeat;
         // Read only heartbeat interval - set in constructor.
         int HeartBeatInterval { get; }
     }

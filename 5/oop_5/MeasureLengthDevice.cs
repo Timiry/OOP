@@ -9,13 +9,15 @@ using DeviceControl;
 
 namespace oop_5
 {
-    public class MeasureLengthDevice : MeasureDataDevice, IMeasuringDevice
+    public class MeasureLengthDevice : MeasureDataDevice
     {
-        public MeasureLengthDevice(Units unitsToUse)
+        public MeasureLengthDevice(Units unitsToUse, int heartBeatInterval = 1000, string logFileName = "measurements.log")
         {
-            this.unitsToUse = unitsToUse;
             measurementType = DeviceType.Length;
-        }      
+            this.unitsToUse = unitsToUse;
+            this.HeartBeatInterval = heartBeatInterval;
+            this.LoggingFileName = logFileName;
+        }
 
         public override decimal MetricValue()
         {
