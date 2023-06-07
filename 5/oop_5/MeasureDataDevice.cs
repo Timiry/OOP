@@ -53,7 +53,7 @@ namespace MeasuringDevice
                 System.Threading.Thread.Sleep(timer.Next(500, 1000));
                 dataCaptured[i] = controller.TakeMeasurement();
                 MostRecentMeasure = dataCaptured[i];
-                if (!IsCollecting) break;
+                if (IsCollecting == false) break;
                 if (loggingFileWriter is not null)
                 {
                     try
@@ -123,6 +123,7 @@ namespace MeasuringDevice
         public void StartCollecting()
         {
             controller = DeviceController.StartDevice(measurementType);
+            IsCollecting = true;
             GetMeasurements();
             StartHeartBeat();
         }
