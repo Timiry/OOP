@@ -74,19 +74,12 @@ namespace MeasuringDevice
         }
         protected virtual void OnNewMeasurementTaken()
         {
-            if (NewMeasurementTaken != null)
-            {
-                NewMeasurementTaken.Invoke(this, null);
-            }
-         
+            NewMeasurementTaken?.Invoke(this, null);
         }      
 
         public void OnHeartBeat()
-        {
-            if(HeartBeat != null)
-            {
-                HeartBeat(this, new HeartBeatEventArgs());
-            }
+        {            
+            HeartBeat?.Invoke(this, new HeartBeatEventArgs());           
         }
 
         private void StartHeartBeat()
