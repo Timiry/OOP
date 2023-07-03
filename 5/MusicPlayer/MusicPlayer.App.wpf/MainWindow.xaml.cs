@@ -26,6 +26,7 @@ namespace MusicPlayer.App.wpf
     {
         #region DI - Внедрение зависимости
         private static Configuration _configuration;
+        private IPlayer player;
 
         public static ISong CreateSong(string title, string artist, string file)
         {          
@@ -60,9 +61,9 @@ namespace MusicPlayer.App.wpf
             _configuration = new Configuration();
             InitializeComponent();
             ListBox_Songs.ItemsSource = GetAllSongs();
-            ListBox_Songs.DisplayMemberPath = "Title";
+            ListBox_Songs.DisplayMemberPath = "Title";           
         }
-        
+
         private void Btn_Play_Click(object sender, RoutedEventArgs e)
         {
             if (ListBox_Songs.SelectedItem == null)
@@ -132,8 +133,12 @@ namespace MusicPlayer.App.wpf
             if(ListBox_Songs.SelectedItem != null)
             {
                 var player = _configuration.Container.GetInstance<IPlayer>();
+                player.Pause();
                 player.RemoveSong((ISong)ListBox_Songs.SelectedItem);
                 ListBox_Songs.ItemsSource = GetAllSongs();
+                Label_CurrentSong.Content = "";
+                Label_CurrentSongArtist.Content = "";
+                Label_Status.Content = "Выберите песню";
             }
         }
 
@@ -161,7 +166,6 @@ namespace MusicPlayer.App.wpf
             else
             {
                 player.CurrentSong = (ISong)ListBox_Songs.SelectedItem;
-                //player._mediaPlayer.Open(new Uri(player.CurrentSong.FileName, UriKind.Relative));
                 player.Open();
                 player.Play();
                 Label_Status.Content = "Играет:";

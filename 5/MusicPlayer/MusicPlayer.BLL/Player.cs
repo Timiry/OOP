@@ -22,7 +22,6 @@ namespace MusicPlayer.BLL
         {
             _songData = songData ?? throw new ArgumentNullException(nameof(songData));
             _mediaPlayer = new MediaPlayer();
-            _mediaPlayer.MediaEnded += MediaPlayer_MediaEnded;
         }
 
         public void Play()
@@ -74,14 +73,12 @@ namespace MusicPlayer.BLL
                     if (enumerator.MoveNext())
                     {
                         CurrentSong = enumerator.Current;
-                        //_mediaPlayer.Open(new Uri(CurrentSong.FileName));
                         Open();
                     } else
                     {
                         enumerator = songs.GetEnumerator();
                         enumerator.MoveNext();
                         CurrentSong = enumerator.Current;
-                        //_mediaPlayer.Open(new Uri(CurrentSong.FileName));
                         Open();
                     }
                     break;
@@ -114,17 +111,6 @@ namespace MusicPlayer.BLL
                     break;
                 }
             }
-        }
-
-        private void MediaPlayer_MediaEnded(object sender, EventArgs e)
-        {
-            //if (_currentIndex < _playlist.Count - 1)
-            //{
-            //    _currentIndex++;
-            //    _mediaPlayer.Open(new Uri(_playlist[_currentIndex]));
-            //    _mediaPlayer.Play();
-            //    _isPlaying = true;
-            //}
-        }
+        }      
     }
 }
