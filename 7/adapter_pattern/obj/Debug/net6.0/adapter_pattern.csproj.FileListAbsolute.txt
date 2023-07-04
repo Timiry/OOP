@@ -1,0 +1,15 @@
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\7\adapter_pattern\bin\Debug\net6.0\adapter_pattern.exe
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\7\adapter_pattern\bin\Debug\net6.0\adapter_pattern.deps.json
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\7\adapter_pattern\bin\Debug\net6.0\adapter_pattern.runtimeconfig.json
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\7\adapter_pattern\bin\Debug\net6.0\adapter_pattern.dll
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\7\adapter_pattern\bin\Debug\net6.0\adapter_pattern.pdb
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\7\adapter_pattern\obj\Debug\net6.0\adapter_pattern.csproj.AssemblyReference.cache
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\7\adapter_pattern\obj\Debug\net6.0\adapter_pattern.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\7\adapter_pattern\obj\Debug\net6.0\adapter_pattern.AssemblyInfoInputs.cache
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\7\adapter_pattern\obj\Debug\net6.0\adapter_pattern.AssemblyInfo.cs
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\7\adapter_pattern\obj\Debug\net6.0\adapter_pattern.csproj.CoreCompileInputs.cache
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\7\adapter_pattern\obj\Debug\net6.0\adapter_pattern.dll
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\7\adapter_pattern\obj\Debug\net6.0\refint\adapter_pattern.dll
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\7\adapter_pattern\obj\Debug\net6.0\adapter_pattern.pdb
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\7\adapter_pattern\obj\Debug\net6.0\adapter_pattern.genruntimeconfig.cache
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\7\adapter_pattern\obj\Debug\net6.0\ref\adapter_pattern.dll

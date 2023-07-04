@@ -1,0 +1,15 @@
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\7\builder_pattern\bin\Debug\net6.0\builder_pattern.exe
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\7\builder_pattern\bin\Debug\net6.0\builder_pattern.deps.json
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\7\builder_pattern\bin\Debug\net6.0\builder_pattern.runtimeconfig.json
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\7\builder_pattern\bin\Debug\net6.0\builder_pattern.dll
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\7\builder_pattern\bin\Debug\net6.0\builder_pattern.pdb
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\7\builder_pattern\obj\Debug\net6.0\builder_pattern.csproj.AssemblyReference.cache
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\7\builder_pattern\obj\Debug\net6.0\builder_pattern.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\7\builder_pattern\obj\Debug\net6.0\builder_pattern.AssemblyInfoInputs.cache
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\7\builder_pattern\obj\Debug\net6.0\builder_pattern.AssemblyInfo.cs
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\7\builder_pattern\obj\Debug\net6.0\builder_pattern.csproj.CoreCompileInputs.cache
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\7\builder_pattern\obj\Debug\net6.0\builder_pattern.dll
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\7\builder_pattern\obj\Debug\net6.0\refint\builder_pattern.dll
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\7\builder_pattern\obj\Debug\net6.0\builder_pattern.pdb
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\7\builder_pattern\obj\Debug\net6.0\builder_pattern.genruntimeconfig.cache
+C:\Users\Timiry\Desktop\Учеба\ооп\oop\7\builder_pattern\obj\Debug\net6.0\ref\builder_pattern.dll
